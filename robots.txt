@@ -1,0 +1,14 @@
+Sitemap: http://jeecarnot.com/sitemap.xml
+User-agent: *
+Allow: /index.html
+Disallow: /admin
+Disallow: /uploads
+Disallow: /404.html
+Disallow: /blog.html
+Disallow: /comingsoonjee.html
+Disallow: /how-to-pay.html
+Disallow: /mentor-apply.html
+Disallow: /mentors.html
+Disallow: /privacy.html
+Disallow: /register.html
+Disallow: /terms.html

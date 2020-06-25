@@ -1,0 +1,54 @@
+.bg-w-form .form-input{
+    background-color: lavender;
+}
+.register-table .register-form .col-md-6 {
+    margin-bottom: 0px;
+}
+.radio-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;   
+    align-items: center;
+    background-color: white !important;
+}
+
+.radio-wrapper{
+    width: 50%;
+}
+.radio-container label{
+font-weight:normal ;
+text-transform: capitalize !important;
+}
+.radio-container:focus, .radio-container:active {
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) */
+    box-shadow: none !important;
+}
+.radio-container input[type="radio"],.radio-container label{
+    /* margin-top: 10px; */
+    margin: 0px !important;
+    vertical-align: middle;
+    padding: 5px;;
+}
+label{
+    text-transform: none !important;
+
+}
+body{
+    background-image: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%,rgba(26, 218, 182, 0.15) 100%),linear-gradient(336deg, rgb(50, 52, 221),rgb(60, 239, 241));
+}
+textarea{
+    resize:none; 
+    height: 100px !important;
+}
+.rlp-table .rlp-form{
+    margin-bottom: 5px;
+}
+.post-padding {
+    padding-bottom: 50px !important;
+}
+img.login{
+    max-width: 300px;
+}
+.swal2-popup{
+    font-size: inherit !important;
+}

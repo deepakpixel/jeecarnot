@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165403436-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166333072-1');
+    </script>
+    <title>Register | JEE Carnot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+    <!-- LIBRARY FONT-->
+    <!-- <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,300"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome-4.4.0/css/font-awesome.css"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-svg/css/Glyphter.css"> -->
+    <!-- LIBRARY CSS-->
+    <!-- <link type="text/css" rel="stylesheet" href="assets/libs/animate/animate.css"> -->
+    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-3.3.5/css/bootstrap.css">
+    <!-- <script src="assets/libs/bootstrap-3.3.5/js/bootstrap.min.js"></script> -->
+    <!-- <link type="text/css" rel="stylesheet" href="assets/libs/owl-carousel-2.0/assets/owl.carousel.css"> -->
+    <link type="text/css" rel="stylesheet" href="assets/libs/selectbox/css/jquery.selectbox.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/color-1.css">
+
+    <!-- <link type="text/css" rel="stylesheet" href="assets/libs/media-element/build/mediaelementplayer.min.css"> -->
+    <!-- STYLE CSS    -->
+    <!--link(type="text/css", rel='stylesheet', href='assets/css/color-1.css', id="color-skins")-->
+    <link type="text/css" rel="stylesheet" href="#" id="color-skins">
+    <script src="assets/libs/jquery/jquery-2.1.4.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./register.css">
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5ecffaf5c75cbf1769f051ef/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</head>
+
+<body onload="showMyModal();">
+    <!-- HEADER-->
+    <header>
+        <!-- not include-->
+    </header>
+    <!-- WRAPPER-->
+    <form id="form" onsubmit="registerMentee();return false">
+        <div id="wrapper-content">
+            <!-- PAGE WRAPPER-->
+            <div id="page-wrapper">
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+                    <!-- CONTENT-->
+                    <div class="content">
+                        <div class="page-register rlp">
+                            <div class="container">
+                                <div class="register-wrapper rlp-wrapper">
+                                    <div class="register-table rlp-table">
+                                        <a href="index.html">
+                                            <img src="assets/images/logo-color-1.png" alt="" class="login" /></a>
+                                        <!-- how it works image -->
+                                        <!-- <div>
+                                            <img src="./assets/images/how-it-works.jpg" alt="" width="100%">
+                                        </div> -->
+                                        <br>
+                                        <div class="register-title rlp-title">Register here to get mentorship now!
+                                        </div>
+                                        <div class="register-form bg-w-form rlp-form">
+                                            <h5 style="font-weight: bold;"><a href="./how-to-pay.html">Click here to
+                                                    know
+                                                    how to
+                                                    pay.</a></h5>
+
+                                            <h5>
+                                                <strong>NOTE</strong>
+                                                <br>
+                                                1. There will be certain conditions in the free trial of 1 month.<br>
+                                                2. Selected
+                                                students of JEE 2021 and above will be given free trial. <br>
+                                                3. Other can get the service by paying the fees.
+                                            </h5>
+                                            <!-- <h5 style="color: blue;">
+                                                All JEE-2020 students can avail 3-day free trial.
+                                            </h5> -->
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6"><label for="name"
+                                                        class="control-label form-label">Name <span
+                                                            class="highlight">*</span></label><input id="name"
+                                                        name="name" type="text" placeholder=""
+                                                        class="form-control form-input" />
+                                                    <!-- p.help-block Warning ! -->
+                                                    <p class="help-block" id="help-block-name"><br></p>
+                                                    <!-- <br> -->
+                                                </div>
+                                                <div class="col-md-6"><label for="email"
+                                                        class="control-label form-label">Email <span
+                                                            class="highlight">*</span></label><input id="email"
+                                                        name="email" type="text" placeholder=""
+                                                        class="form-control form-input" />
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-email"><br></p>
+
+                                                </div>
+                                                <div class="col-md-6"><label for="phone"
+                                                        class="control-label form-label">Phone number <span
+                                                            class="highlight">*</span></label>
+                                                    <input id="phone" name="phone" type="text" maxlength="10"
+                                                        placeholder="" oninput="if(this.value.length==10)halfSubmit();"
+                                                        class="form-control form-input" />
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-phone"><br></p>
+
+                                                </div>
+                                                <div class="col-md-6"><label for="phone2"
+                                                        class="control-label form-label">Alternate phone number <span
+                                                            class="highlight"></span></label><input id="phone2"
+                                                        name="phone2" type="text" placeholder=""
+                                                        class="form-control form-input" maxlength="10" />
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-phone2"><br></p>
+
+                                                </div>
+
+                                                <div class="col-md-6"><label for="parent"
+                                                        class="control-label form-label">Parent's name <span
+                                                            class="highlight">*</span></label>
+                                                    <input id="parent" name="parent" type="text" placeholder=""
+                                                        class="form-control form-input" />
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-parent"><br></p>
+
+                                                </div>
+
+                                                <div class="col-md-6"><label for="parentphone"
+                                                        class="control-label form-label">Parent's Phone number <span
+                                                            class="highlight">*</span></label>
+                                                    <input id="parentphone" name="parentphone" type="text"
+                                                        maxlength="10" placeholder="" class="form-control form-input" />
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-parentphone"><br></p>
+
+                                                </div>
+
+                                                <div class="col-md-6"><label for="class"
+                                                        class="control-label form-label">Select class <span
+                                                            class="highlight">*</span></label>
+                                                    <select name="class" id="class" class="form-control form-input">
+                                                        <!-- <option value="0">Choose your class</option> -->
+                                                        <option value="11th">11th</option>
+                                                        <option value="12th">12th</option>
+                                                        <option value="Dropper">Dropper</option>
+                                                    </select>
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-class"><br></p>
+
+                                                </div>
+
+                                                <div class="col-md-6"><label for="percentile"
+                                                        class="control-label form-label">Percentile in January JEE (if
+                                                        attempted) <span class="highlight"></span></label>
+                                                    <input id="percentile" name="percentile" type="text" maxlength="5"
+                                                        placeholder="" class="form-control form-input" />
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-percentile"><br></p>
+
+                                                </div>
+
+                                                <div class="col-md-6"><label for="target"
+                                                        class="control-label form-label">JEE Target <span
+                                                            class="highlight">*</span></label>
+                                                    <select name="target" id="target" class="form-control form-input">
+                                                        <!-- <option value="0"></option> -->
+                                                        <option value="JEE 2020">JEE 2020</option>
+                                                        <option value="JEE 2021">JEE 2021</option>
+                                                        <option value="JEE 2022">JEE 2022</option>
+                                                    </select>
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-target"><br></p>
+
+                                                </div>
+
+                                                <div class="col-md-6"><label for="mode"
+                                                        class="control-label form-label">Mode of Preparation <span
+                                                            class="highlight">*</span></label>
+                                                    <!-- <select name="" id="mode" class="form-control form-input"> -->
+                                                    <!-- <option value="0"></option> -->
+                                                    <div class=" form-input radio-container">
+                                                        <div class="radio-wrapper">
+                                                            <input type="radio" name="mode" id="mode1" value="Coaching">
+                                                            <label for="mode1">coaching</label>
+                                                        </div>
+                                                        <div class="radio-wrapper">
+                                                            <input type="radio" name="mode" id="mode2"
+                                                                value="Self Study">
+                                                            <label for="mode2">Self Study</label>
+                                                        </div>
+                                                    </div>
+                                                    <p class="help-block" id="help-block-mode"><br></p>
+
+                                                </div>
+
+                                                <div class="col-md-6"><label for="target2"
+                                                        class="control-label form-label">Other entrance exams you are
+                                                        targeting for<span class="highlight"></span></label>
+                                                    <input id="target2" name="target2" type="text" placeholder=""
+                                                        class="form-control form-input" />
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-target2"><br></p>
+
+                                                </div>
+
+
+                                                <div class="col-md-6"><label for="language"
+                                                        class="control-label form-label">Language preference for JEE
+                                                        <span class="highlight">*</span></label>
+
+                                                    <div class="form-input radio-container">
+                                                        <div class="radio-wrapper">
+                                                            <input type="radio" name="language" id="lang-en"
+                                                                value="English">
+                                                            <label for="lang-en">English</label>
+                                                        </div>
+                                                        <div class="radio-wrapper">
+                                                            <input type="radio" name="language" id="lang-hi"
+                                                                value="Hindi">
+                                                            <label for="lang-hi">Hindi</label>
+                                                        </div>
+                                                    </div>
+                                                    <p class="help-block" id="help-block-language"><br></p>
+
+                                                </div>
+
+                                                <div class="col-md-6"><label for="material"
+                                                        class="control-label form-label">Do you want JEECARNOT's study
+                                                        material <span class="highlight">*</span></label>
+                                                    <select name="material" id="material"
+                                                        class="form-control form-input">
+                                                        <!-- <option value="0">Choose </option> -->
+                                                        <option value="Not required">No, Coaching material is sufficient
+                                                        </option>
+                                                        <option value="Test and Material">Yes, I need test series and
+                                                            study
+                                                            material
+                                                        </option>
+                                                        <option value="Test only">I want test series only</option>
+                                                    </select>
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-material"><br></p>
+
+                                                </div>
+
+
+                                                <div class="col-md-12"><label for="info"
+                                                        class="control-label form-label">How
+                                                        did you first hear about JEECARNOT?<span
+                                                            class="highlight">*</span></label>
+                                                    <!-- <select name="info" id="info" class="form-control form-input"
+                                                        onchange="showHideOthers()">
+                                                        <option value="">Please choose</option>
+                                                        <option value="Quora">Quora</option>
+                                                        <option value="YouTube">YouTube</option>
+                                                        <option value="Instagram">Instagram</option>
+                                                        <option value="Facebook">Facebook</option>
+                                                        <option value="other">Other (please mention)</option>
+                                                    </select> -->
+
+                                                    <div>
+                                                        <input type="radio" name="info" id="info11"
+                                                            value="YouTube (Tech Skool)" onchange="showHideOthers()">
+                                                        <label for="info11">YouTube (Tech Skool)</label>
+                                                    </div>
+
+                                                    <div>
+                                                        <input type="radio" name="info" id="info22"
+                                                            value="YouTube (Navtez Mishra)" onchange="showHideOthers()">
+                                                        <label for="info22">YouTube (Navtez Mishra)</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" name="info" id="info3" value="Quora"
+                                                            onchange="showHideOthers()">
+                                                        <label for="info3">Quora</label>
+                                                    </div>
+
+                                                    <div>
+                                                        <input type="radio" name="info" id="info4" value="Social Media"
+                                                            onchange="showHideOthers()">
+                                                        <label for="info4">Social Media</label>
+                                                    </div>
+
+                                                    <div>
+                                                        <input type="radio" name="info" id="info-other" value="other"
+                                                            onchange="showHideOthers()">
+                                                        <label style="display:inline" for="info-other">Personal
+                                                            Reference or Other( Please give
+                                                            name of person or source)</label>
+                                                    </div>
+
+
+                                                    <!-- p.help-block Warning !-->
+                                                    <p class="help-block" id="help-block-info"><br></p>
+
+                                                </div>
+
+
+                                                <div class="col-md-12" id="info2-container" style="display: none;">
+                                                    <label for="info2" class="control-label form-label">Please mention
+                                                        the name of person or source<span
+                                                            class="highlight">*</span></label><input id="info2"
+                                                        name="info2" type="text" placeholder=""
+                                                        class="form-control form-input" />
+                                                    <p class="help-block" id="help-block-info2"><br></p>
+                                                </div>
+
+
+                                                <div class="hidden-container" hidden>
+                                                    <div class="col-md-12">
+                                                        <h4>Payment details</h4>
+                                                        <hr>
+                                                    </div>
+
+                                                    <div class="col-md-6 payment"><label for="refno"
+                                                            class="control-label form-label">Payment reference
+                                                            number<span class="highlight"></span></label><input
+                                                            id="refno" name="refno" type="text" placeholder=""
+                                                            class="form-control form-input" />
+                                                        <p class="help-block" id="help-block-refno"><br></p>
+                                                    </div>
+
+                                                    <div class="col-md-6 payment">
+                                                        <label for="proof" class="control-label form-label">Payment
+                                                            screenshot<span class="highlight"></span></label>
+                                                        <div class="file-upload form-input">
+                                                            <div class="file-select ">
+                                                                <div class="file-select-button" id="fileName">Choose
+                                                                    File
+                                                                </div>
+                                                                <div class="file-select-name" id="noFile">No file
+                                                                    chosen...
+                                                                </div>
+                                                                <input type="file" id="chooseFile" name="proof">
+                                                            </div>
+                                                        </div>
+                                                        <p class="help-block" id="help-block-proof"><br></p>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-md-12"><label for="promocode"
+                                                        class="control-label form-label">Promo Code (if any)<span
+                                                            class="highlight"></span></label>
+                                                    <input id="promocode" name="promocode" type="text" maxlength="10"
+                                                        placeholder="" class="form-control form-input" />
+                                                    <p class="help-block" id="help-block-promocode"><br></p>
+                                                </div>
+
+                                                <div class="col-md-12"><label for="suggestion"
+                                                        class="control-label form-label">Why you want
+                                                        mentorship?<span class="highlight"></span></label>
+                                                    <!-- <input id="suggestion" type="text" placeholder=""
+                                                    class="form-control form-input" /> -->
+                                                    <textarea id="suggestion" name="suggestion"
+                                                        class="form-control form-input" cols="30" rows="10"></textarea>
+                                                    <!-- p.help-block Warning ! -->
+                                                    <p class="help-block" id="help-block-suggestion"><br></p>
+                                                    <!-- <br> -->
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    By clicking Register Me, you agree to our <a
+                                                        href="./terms.html">Terms and Conditions</a> and that you have
+                                                    read them.
+                                                </div>
+
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="register-submit">
+                                            <button id="register-button" type="submit"
+                                                class="btn btn-register btn-green"><span id="register-text">Register
+                                                    me</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUTTON BACK TO TOP-->
+            <!-- <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div> -->
+        </div>
+    </form>
+    <!-- FOOTER-->
+    <footer></footer>
+    <!-- THEME SETTING-->
+
+    <!-- LOADING-->
+    <!-- JAVASCRIPT LIBS-->
+
+    <!-- <script src="assets/libs/smooth-scroll/jquery-smoothscroll.js"></script> -->
+    <!-- <script src="assets/libs/owl-carousel-2.0/owl.carousel.min.js"></script> -->
+    <!-- <script src="assets/libs/appear/jquery.appear.js"></script> -->
+    <!-- <script src="assets/libs/count-to/jquery.countTo.js"></script> -->
+    <!-- <script src="assets/libs/wow-js/wow.min.js"></script> -->
+    <!-- <script src="assets/libs/selectbox/js/jquery.selectbox-0.2.min.js"></script> -->
+    <!-- <script src="assets/libs/fancybox/js/jquery.fancybox.js"></script> -->
+    <!-- <script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script> -->
+    <!-- MAIN JS-->
+    <!-- <script src="assets/js/main.js"></script> -->
+    <!-- LOADING SCRIPTS FOR PAGE-->
+
+    <div id="myModal" class="modal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="removeModal()" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">INFORMATION</h4>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size:16px">We are closing free trial for <strong>JEE2020 students</strong> due to
+                        high number of
+                        registrations. Some JEE2021
+                        and JEE2022 students can avail trial if they really want to continue in future. Mention your
+                        reason why you want mentorship in registration form.
+                        <br>
+                        JEE2020 students can avail premium mentorship only. Feel free to use chatbox to contact us
+                        directly.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="removeModal()" class="btn btn-default"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="./assets/js/pages/register2.js"></script>
+<script>
+    // document.onkeydown = function () {
+    //     if (document.activeElement !== document.getElementById("suggestion"))
+    //         if (window.event.keyCode == '13') {
+    //             registerMentee();
+    //             // console.log("hello")
+    //             return false;
+    //         }
+    // }
+
+</script>
+
+<script src="./assets/js/alerts.js"></script>
+
+<style>
+    .modal {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes modal {
+        from {
+            opacity: 0;
+            top: 0px;
+        }
+
+        to {
+            top: 50%;
+            opacity: 1;
+        }
+    }
+
+    .btn-default {
+        color: #333 !important;
+        border-radius: 5px;
+        background-color: #f2f2f2 !important;
+        border-color: #ccc;
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+
+    .modal-dialog {
+        animation: modal .5s ease-in-out;
+
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+
+    .file-upload {
+        display: block;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    .file-upload .file-select {
+        display: block;
+        border: 2px solid #dce4ec;
+        color: #34495e;
+        cursor: pointer;
+        height: 50px;
+        line-height: 50px;
+        text-align: left;
+        background: #FFFFFF;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .file-upload .file-select .file-select-button {
+        background: lavender;
+        padding: 0 10px;
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .file-upload .file-select .file-select-name {
+        line-height: 50px;
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .file-upload .file-select:hover {
+        border-color: #34495e;
+        transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+    }
+
+    .file-upload .file-select:hover .file-select-button {
+        background: #34495e;
+        color: #FFFFFF;
+        transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+    }
+
+    .file-upload.active .file-select {
+        border-color: #3fa46a;
+        transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+    }
+
+    .file-upload.active .file-select .file-select-button {
+        background: #3fa46a;
+        color: #FFFFFF;
+        transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+    }
+
+    .file-upload .file-select input[type=file] {
+        z-index: 100;
+        cursor: pointer;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+    .file-upload .file-select.file-select-disabled {
+        opacity: 0.65;
+    }
+
+    .file-upload .file-select.file-select-disabled:hover {
+        cursor: default;
+        display: block;
+        border: 2px solid lavender;
+        color: #34495e;
+        cursor: pointer;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 5px;
+        text-align: left;
+        background: #FFFFFF;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .file-upload .file-select.file-select-disabled:hover .file-select-button {
+        background: #dce4ec;
+        color: lavender;
+        padding: 0 10px;
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .file-upload .file-select.file-select-disabled:hover .file-select-name {
+        line-height: 50px;
+        display: inline-block;
+        padding: 0 10px;
+    }
+</style>
+
+<script async="false">
+    // Swal.fire({
+    //     title: 'Please wait!',
+    //     html: 'Due to high number of registrations, we are closing free trial mentorship for <strong></strong>, it won\'t take long<br><br><br>',
+    //     allowEscapeKey: false,
+    //     allowOutsideClick: false,
+    //     allowEnterKey: false,// default value
+
+    // });
+    var showed = 0;
+
+
+    function removeModal() {
+        showed = 1;
+        document.getElementsByClassName("modal")[0].style.display = "none";
+        // clearTimeout(showBanner);
+    }
+
+    function showMyModal() {
+        if (showed == 0) {
+            setTimeout(() => {
+                if (showed == 0) {
+                    document.getElementById("myModal").style.display = "block";
+                    showed = 1;
+                    // console.log("displayed once")
+                }
+            }, 2000);
+        }
+    }
+
+
+</script>
